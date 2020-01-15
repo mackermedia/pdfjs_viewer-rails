@@ -157,7 +157,7 @@ function scrollIntoView(element, spot) {
 
   var parent = element.offsetParent;
   if (!parent) {
-    console.error('offsetParent is not set -- cannot scroll');
+    console.warn('offsetParent is not set -- cannot scroll');
     return;
   }
   var offsetY = element.offsetTop + element.clientTop;
